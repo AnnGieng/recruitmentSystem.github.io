@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application List</title>
+    <link rel="stylesheet" href="application.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Samcom Enterprise Recruitment System</a>
+            <div class="welcome-message">
+                <p>Welcome to Application List!</p>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="/adminDashboard.html" class="nav-link">Post Job</a></li>
+                <li class="nav-item"><a href="/JobLists.html" class="nav-link">Job Lists</a></li>
+                <li class="nav-item"><a href="/Applications.html" class="nav-link">Applications</a></li>
+                <li class="nav-item"><a href="/interviews.html" class="nav-link">Interviews</a></li>
+                <li class="nav-btn"><a href="/index.html" class="button" id="logoutBtn">Logout</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="application-list">
+            <div class="application-header">
+                <h2>Application List</h2>
+                <div class="controls">
+                    <label for="RoleApplied-filter">Role:</label>
+                    <select id="RoleApplied-filter">
+                        <option value="all">All</option>
+                    </select>
+
+                    <label for="Age-filter">Age:</label>
+                    <input type="number" id="Age-filter" placeholder="Age">
+
+                    <label for="Gender-filter">Gender:</label>
+                    <select id="Gender-filter">
+                        <option value="all">All</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+
+                    <label for="Diploma-filter">Diploma:</label>
+                    <input type="text" id="Diploma-filter" placeholder="Diploma">
+
+                    <label for="Degree-filter">Degree:</label>
+                    <input type="text" id="Degree-filter" placeholder="Degree">
+
+                    <label for="Skills-filter">Skills:</label>
+                    <input type="text" id="Skills-filter" placeholder="Skills">
+
+                    <label for="Experience-filter">Experience:</label>
+                    <input type="number" id="Experience-filter" placeholder="Years of Experience">
+
+                    <label for="Status-filter">Status:</label>
+                    <select id="Status-filter">
+                        <option value="all">All</option>
+                        <option value="pending">Pending</option>
+                        <option value="approved">Approved</option>
+                        <option value="rejected">Rejected</option>
+                    </select>
+
+                    <button id="apply-filters">Apply Filters</button>
+                    <button id="generate-report">Generate Report</button>
+                </div>
+            </div>
+            <table id="applications-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Applicant Information</th>
+                        <th>Role</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Diploma</th>
+                        <th>Degree</th>
+                        <th>Skills</th>
+                        <th>Total-Years-of-Experience</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button>Previous</button>
+                <span>Page 1 of 1</span>
+                <button>Next</button>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="application.js"></script>
+</body>
+</html>

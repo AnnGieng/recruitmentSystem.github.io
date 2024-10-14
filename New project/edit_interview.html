@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Interview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="nav-btn"><a href="/index.html" class="button">Logout</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Edit Interview Details</h1>
+        <div id="edit-interview-container">
+            <form id="edit-interview-form">
+                <label for="interview-date">Interview Date:</label>
+                <input type="date" id="interview-date" required>
+                <label for="interview-time">Interview Time:</label>
+                <input type="time" id="interview-time" required>
+                <div class="interview-type">
+                    <label>
+                        <input type="radio" name="interview-type" value="online" id="online-interview" required>
+                        Online Interview
+                    </label>
+                    <label>
+                        <input type="radio" name="interview-type" value="physical" id="physical-interview" required>
+                        Physical Interview
+                    </label>
+                </div>
+                <div id="online-link" style="display: none;">
+                    <label for="google-meet-link">Google Meet Link:</label>
+                    <input type="url" id="google-meet-link" placeholder="Enter Google Meet link">
+                </div>
+                <div id="physical-link" style="display: none;">
+                    <label for="google-map-link">Google Map Link:</label>
+                    <input type="url" id="google-map-link" placeholder="Enter Google Map link">
+                </div>
+                <button type="submit" id="submit-edit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="edit_interview.js"></script>
+</body>
+
+</html>

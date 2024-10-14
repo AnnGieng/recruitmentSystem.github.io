@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Profile</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="Profile.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Samcom Enterprise Recruitment System</a>
+            <div class="welcome-message">
+                <p>Welcome to your profile!</p>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="/dashboard.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/Profile.html" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="/Clientapplications.html" class="nav-link">Applications</a></li>
+                <li class="nav-item"><a href="/notification.html" class="nav-link">Notifications</a></li>
+                <li class="nav-btn"><a href="/index.html" class="button">Logout</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <div class="profile-container">
+        <h1>Applicant Profile</h1>
+        <div class="profile-info">
+            <div class="picture">
+                <img src="images/ann.jpg.png" alt="picture">
+            </div>
+            <div id="profile-details">
+                <h2>Personal Details</h2>
+                <p><strong>Name:</strong> <span id="profile-name"></span></p>
+                <p><strong>Age:</strong> <span id="profile-age"></span></p>
+                <p><strong>Address:</strong> <span id="profile-address"></span></p>
+                <p><strong>Phone Number:</strong> <span id="profile-phone"></span></p>
+                <p><strong>Gender:</strong> <span id="profile-gender"></span></p>
+                <p><strong>Email ID:</strong> <span id="profile-email"></span></p>
+    
+                <h2>Graduation</h2>
+                <p><strong>Graduation Degree:</strong> <span id="profile-grad-degree"></span></p>
+                <p><strong>Graduation Percentage:</strong> <span id="profile-grad-percentage"></span></p>
+    
+                <h2>College</h2>
+                <p><strong>Graduation Diploma:</strong> <span id="profile-grad-diploma"></span></p>
+                <p><strong>Graduation Percentage:</strong> <span id="profile-college-percentage"></span></p>
+    
+                <h2>Previous Job Description</h2>
+                <p><strong>Designation:</strong> <span id="profile-designation"></span></p>
+                <p><strong>Total Years of Experience:</strong> <span id="profile-total-years-of-experience"></span></p>
+    
+                <h2>Additional Information</h2>
+                <p><strong>Your Skills:</strong> <span id="profile-skills"></span></p>
+                <p><strong>CV:</strong> <span id="profile-cv"></span></p>
+            </div>
+            <button id="edit-button">Edit Information</button>
+        </div>
+        <script type="module" src="profile.js"></script>
+    </body>
+    </html>
+
+</html>

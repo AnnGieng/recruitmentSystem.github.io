@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interviews</title>
+    <link rel="stylesheet" href="application.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Samcom Enterprise Recruitment System</a>
+            <div class="welcome-message">
+                <p>View Interviews!</p>
+                <!-- You can customize this welcome message to display the user's name or any other relevant information -->
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="/adminDashboard.html" class="nav-link">Post Job</a></li>
+                <li class="nav-item"><a href="/JobLists.html" class="nav-link">JobLists</a></li>
+                <li class="nav-item"><a href="/Applications.html" class="nav-link">Applications</a></li>
+                <li class="nav-item"><a href="/interviews.html" class="nav-link">Interviews</a></li>
+                <li class="nav-btn"><a href="/index.html" class="button" id="logoutBtn">Logout</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="application-list">
+            <div class="application-header">
+                <h2>Interviews</h2>
+                <div class="controls">
+                    <button id="generate-report">Generate report</button>
+                </div>
+            </div>
+            <table id="applications-table">
+                <thead>
+                    <tr>
+                        <th>Applicant</th>
+                        <th>Interviewer</th>
+                        <th>Scheduled date</th>
+                        <th>Scheduled time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script type="module" src="interviews.js"></script>
+</body>
+</html>

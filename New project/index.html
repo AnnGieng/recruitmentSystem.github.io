@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="login-container">
+    <form class="signup-form" id="signupForm" method="post">
+      <h2>Sign Up</h2>
+      <p>Recruitment System</p>
+      <input type="text" id="name" placeholder="Name" autocomplete="rutjfkde">
+      <input type="text" id="occupation" placeholder="Occupation" autocomplete="rutjfkde">
+      <input type="email" id="rEmail" placeholder="Email" autocomplete="rutjfkde">
+      <input type="password" id="rPassword" placeholder="Password" autocomplete="rutjfkde">
+      <div>
+        <input type="radio" id="option1" name="radioGroup" value="Applicant" checked>
+        <label for="option1">Applicant</label>
+      </div>
+      <div>
+        <input type="radio" id="option2" name="radioGroup" value="Admin">
+        <label for="option2">Admin</label>
+      </div>
+      <button type="button" id="submitSignUp">Sign Up</button>
+      <br>
+      <button type="button" onclick="handleLogin()">Log In</button>
+    </form>
+    <br>
+    <form class="signin-form" id="signinForm">
+      <h2>Sign In</h2>
+      <input type="email" id="email" placeholder="Email" autocomplete="off">
+      <input type="password" id="password" placeholder="Password" autocomplete="off">
+      <button type="button" id="submitSignIn">Login</button>
+      <br>
+      <button type="button" onclick="handleSignUp()">Sign Up</button>
+  </div>
+  <script src="script.js"></script>
+  <script type="module" src="firebaseauth.js"></script>
+</body>
+</html>

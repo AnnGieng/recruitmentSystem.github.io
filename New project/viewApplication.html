@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Application</title>
+    <link rel="stylesheet" href="viewApplication.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="nav-btn"><a href="/index.html" class="button">Logout</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Applicant Details</h1>
+        <div id="application-container">
+            <!-- Applicant details section -->
+            <div id="applicant-details">
+                <!-- Applicant details will be dynamically injected here -->
+            </div>
+            <!-- Job details section -->
+            <div id="job-details">
+                <!-- Job details will be dynamically injected here -->
+            </div>
+            <button id="download-cv" class="button">Download CV</button>
+            <button id="approve" class="button">Approve</button>
+            <button id="reject" class="button">Reject</button>
+        </div>
+
+        <!-- Interview scheduling section -->
+        <div id="interview-section" style="display: none;">
+            <label for="interview-date">Select Interview Date:</label>
+            <input type="date" id="interview-date">
+            <label for="interview-time">Select Interview Time:</label>
+            <input type="time" id="interview-time">
+            <div class="interview-type">
+                <label>
+                    <input type="radio" name="interview-type" value="online" id="online-interview">
+                    Online Interview
+                </label>
+                <label>
+                    <input type="radio" name="interview-type" value="physical" id="physical-interview">
+                    Physical Interview
+                </label>
+            </div>
+            <div id="online-link" style="display: none;">
+                <label for="google-meet-link">Google Meet Link:</label>
+                <input type="url" id="google-meet-link" placeholder="Enter Google Meet link">
+            </div>
+            <div id="physical-link" style="display: none;">
+                <label for="google-map-link">Google Map Link:</label>
+                <input type="url" id="google-map-link" placeholder="Enter Google Map link">
+            </div>
+            <label for="interviewer-select">Select Interviewer:</label>
+            <select id="interviewer-select">
+                <option value="HR John Doe">HR John Doe</option>
+                <option value="Supervisor Clinton">Supervisor Clinton</option>
+                <option value="Specialist Lily">Specialist Lily</option>
+            </select>
+            <button id="submit-interview">Submit</button>
+        </div>
+    </div>
+    <script type="module" src="viewApplication.js"></script>
+</body>
+
+</html>

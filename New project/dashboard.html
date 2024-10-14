@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Samcom Enterprise Recruitment System</a>
+            <div class="welcome-message">
+                <p>Welcome to your dashboard!</p>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="/dashboard.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/Profile.html" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="/Clientapplications.html" class="nav-link">Applications</a></li>
+                <li class="nav-item"><a href="/notification.html" class="nav-link">Notifications</a></li>
+                <li class="nav-btn"><a href="/index.html" class="button">Logout</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-container">
+        <h1>Search for an Opportunity Here</h1>
+        <form id="searchForm">
+            <input type="text" id="searchJob" placeholder="Search job...">
+            <select id="experienceLevel">
+                <option value="">Experience Level</option>
+                <option value="Junior">Junior</option>
+                <option value="Middle">Middle</option>
+                <option value="Senior">Senior</option>
+            </select>
+            <input type="text" id="mandatorySkill" placeholder="Mandatory skill...">
+            <button type="button" onclick="filterJobs()">Search</button>
+        </form>
+    </div>
+    <table class="job-table" id="data-table">
+        <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Level of Experience</th>
+                <th>Mandatory Skill</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="jobTableBody">
+        </tbody>
+    </table>
+    <p id="noResultsMessage" style="display:none;">No jobs found matching the search criteria.</p>
+
+    <script type="module" src="firebaseclient.js"></script>
+</body>
+
+</html>

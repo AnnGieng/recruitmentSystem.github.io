@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="Apply.css">
+</head>
+<body>
+    <li class="nav-btn"><a href="/index.html" class="button">Logout</a></li>
+        
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="container">
+                <h1 id="job-title">Job Application Form</h1>
+                <form id="application-form">
+                    <div class="form-row">
+                        <h2>Personal Details</h2>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name"readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age"required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address"required>
+                        </div>
+                        <div class="form-row"></div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender:</label>
+                            <input type="text" id="gender" name="gender"required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email ID:</label>
+                            <input type="email" id="email" name="email" readonly>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <h2>Graduation</h2>
+                        <div class="form-group">
+                            <label for="grad-degree">Graduation Degree:</label>
+                            <input type="text" id="grad-degree" name="grad-degree"placeholder="Degree in...">
+                        </div>
+                        <div class="form-group">
+                            <label for="grad-percentage">Graduation Percentage:</label>
+                            <input type="number" id="grad-percentage" name="grad-percentage">
+                        </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <h2>College</h2>
+                        <div class="form-group">
+                            <label for="grad-diploma">Graduation Diploma:</label>
+                            <input type="text" id="grad-diploma" name="grad-diploma"placeholder="Diploma in...">
+                        </div>
+                        <div class="form-group">
+                            <label for="college-percentage">Graduation Percentage:</label>
+                            <input type="number" id="college-percentage" name="college-percentage">
+                        </div>
+            </div>
+
+                        <div class="form-row">
+                            <h2>Previous Job Description</h2>
+                            <div class="form-group">
+                                <label for="Designation">Designation:</label>
+                                <input type="text" id="designation" name="designation">
+                            </div>
+                            <div class="form-group">
+                                <label for="Total-Years-of-Experience">Total Years of Experience:</label>
+                                <input type="number" id="total-years-of-experience" name="total-years-of-experience">
+                            </div>
+            </div>
+                    </div>
+    <div class="container">
+        <h1 id="job-title"></h1>
+        <h2 id="experience-level"></h1>
+        <h4 id="mandatoryskill"></h4>
+        <form id="application-form">
+            <div class="form-row">
+                <div class="form-row">
+                    <h2>Additional Information</h2>
+                    <div class="form-group">
+                        <label for="skills">Your Skills</label>
+                        <input type="text" id="skills" name="skills" required>
+                    </div>
+                <div class="form-group">
+                    <label for="cv">Upload your CV (pdf, png, jpg)*</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf, .png, .jpg">
+                </div>
+            </div>
+        
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="checkbox" id="data-policy" name="data-policy" required>
+                    <label for="data-policy">I agree to the <a href="#">data policy</a>*</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="news" name="news">
+                    <label for="news">I agree to receive news about Samcom</label>
+                </div>
+            </div>
+            <button id="submit" >APPLY</button>
+        </form>
+        <button id="back-to-dashboard" style="display: none;">Back to Dashboard</button>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="apply.js"></script>
+</body>
+</html>

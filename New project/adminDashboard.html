@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Samcom Enterprise Recruitment System</a>
+            <div class="welcome-message">
+                <p>Welcome Administrator!</p>
+                <!-- You can customize this welcome message to display the user's name or any other relevant information -->
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+               
+                <li class="nav-item"><a href="/adminDashboard.html" class="nav-link">Post Job</a></li>
+                <li class="nav-item"><a href="JobLists.html" class="nav-link">JobLists</a></li>
+                <li class="nav-item"><a href="/Applications.html" class="nav-link">Applications</a></li>
+                <li class="nav-item"><a href="/interviews.html" class="nav-link">Interviews</a></li>
+                <li class="nav-btn"><a href="index.html" class="button" id="logoutBtn">Logout</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="input-form">
+            <h2>Submit Job Information</h2>
+            <form>
+                <div class="form-group">
+                    <label for="jobTitle">Job Title:</label>
+                    <input type="text" id="jobTitle" name="jobTitle" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="experienceLevel">Level of Experience:</label>
+                    <input type="text" id="experienceLevel" name="experienceLevel" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="mandatoryskill">Mandatory skill:</label>
+                    <input type="text" id="mandatoryskill" name="mandatoryskill" class="form-control">
+                </div>
+                <button type="submit" class="button" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="firebasedb.js"></script>
+</body>
+</html>

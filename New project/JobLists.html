@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job List</title>
+    <link rel="stylesheet" href="JobLists.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Samcom Enterprise Recruitment System</a>
+            <div class="welcome-message">
+                <p>Welcome Administrator!</p>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="/adminDashboard.html" class="nav-link">Post Job</a></li>
+                <li class="nav-item"><a href="/joblist.html" class="nav-link">Job List</a></li>
+                <li class="nav-item"><a href="/Applications.html" class="nav-link">Applications</a></li>
+                <li class="nav-item"><a href="/interviews.html" class="nav-link">Interviews</a></li>
+                <li class="nav-btn"><a href="#" class="button" id="logoutBtn">Logout</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2>Posted Jobs</h2>
+        <table id="jobTable">
+            <thead>
+                <tr>
+                    <th>No. Of Post</th>
+                    <th>Job Title</th>
+                    <th>Level of Experience</th>
+                    <th>Mandatory skill</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Job posts will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Import JavaScript module -->
+    <script type="module" src="JobLists.js"></script>
+</body>
+</html>

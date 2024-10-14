@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar-logo {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.welcome-message {
+    color: #fff;
+    font-size: 1em;
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 14px 20px;
+    transition: background 0.3s;
+}
+
+.nav-link-application {
+    color: #fff;
+    padding: 14px 20px;
+    transition: background 0.3s;
+}
+.nav-link:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.nav-btn .button {
+    padding: 10px 20px;
+    background-color: #ff4b5c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.nav-btn .button:hover {
+    background-color: #ff1f3a;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.actions .edit {
+    color: #FFA500;
+}
+
+.actions .delete {
+    color: #FF0000;
+}
